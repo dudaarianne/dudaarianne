@@ -1,0 +1,547 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/*
+MAIN COLOR: #087f5b
+GRAY COLOR: #343a40
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------------ */
+/* GENERAL STYLES */
+/* ------------------------ */
+body {
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+  border-bottom: 8px solid #087f5b;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+header,
+section {
+  margin-bottom: 96px;
+}
+
+h2 {
+  margin-bottom: 48px;
+  font-size: 36px;
+  letter-spacing: -0.5px;
+  /*   24 / 30 / 36*/
+}
+
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 80px;
+}
+
+.btn:link,
+.btn:visited {
+  background-color: #087f5b;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  border-radius: 100px;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #099268;
+}
+
+.btn--big {
+  font-size: 18px;
+  padding: 16px 32px;
+}
+
+.btn--small {
+  font-size: 14px;
+  padding: 8px 12px;
+}
+
+img {
+  border-radius: 12px;
+}
+
+/* ------------------------ */
+/* COMPONENT STYLES */
+/* ------------------------ */
+
+/* HEADER */
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 80px;
+  margin-top: 64px;
+}
+
+.header-text-box {
+  align-self: center;
+}
+
+h1 {
+  margin-bottom: 32px;
+  font-size: 44px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  /*  44 / 52 / 62*/
+  /*text-shadow: 0 20px 1px rgba(0, 0, 0, 0.21);*/
+}
+
+.header-text {
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+img {
+  width: 100%;
+}
+
+/* FEATURES */
+.features-icon {
+  stroke: #087f5b;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 24px;
+}
+
+.features-title {
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+
+.features-text {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* TESTIMONIAL */
+.testimonial-section {
+  background-color: #087f5b;
+  color: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+.testimonial-box {
+  grid-column: 2 / -1;
+  align-self: center;
+}
+
+.testimonial-box h2 {
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+.testimonial-text {
+  font-style: italic;
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #e6fcf5;
+}
+
+.testimonial-author {
+  color: #c3fae8;
+}
+
+/* CHAIRS */
+.chair {
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
+  border-radius: 12px;
+}
+
+.chair img {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.chair-box {
+  padding: 32px;
+}
+
+h3 {
+  margin-bottom: 24px;
+  font-size: 20px;
+}
+
+.chair-details {
+  list-style: none;
+  margin-bottom: 48px;
+}
+
+.chair-details li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.chair-details li:last-child {
+  margin-bottom: 0;
+}
+
+.chair-icon {
+  stroke: #087f5b;
+  width: 24px;
+  height: 24px;
+}
+
+.chair-price {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  align-items: center;
+}
+
+footer {
+  margin-bottom: 48px;
+  font-size: 14px;
+  color: #495057;
+}
+
+/*WEB DESIGN VS. DEVELOPMENT
+Web designers create the overall look and feel of a website;
+Web developers implement the design using HTML, CSS and JavaScript code
+
+WEB DESIGN INGREDIENTS
+1. Typography
+  Serif vs Sans-serif
+  Serif:
+  --> Creates a traditional/classic look and feel
+  --> Conveys trustworthiness
+  --> Good for long text
+  Sans-serif:
+  --> Modern look and feel
+  --> Clean and simple;
+  --> Easier to choose for beginner design!
+
+  a) Use Good Typefaces 
+    (TOOLBOX: Google Fonts; Font Squirril )
+    Sans-serif:
+    -Inter
+    -Open Sans
+    -Roboto
+    -Montserrat
+    -Work Sans
+    -Lato
+
+    Serif:
+    -Merriweather
+    -Aleo
+    -Playfair Display
+    -Cormorant
+    -Cardo
+    -Lora
+  
+    1- Use only good and popular typefaces and play it safe
+    2- It's okay to use just one typeface per page! If you want more, limit to 2 typefaces.
+    3- Choose the right typeface according to your website personality:
+      --> Choose the right personality for your design
+      --> Decide between a serif and sans-serif typeface
+      --> Experiment with all the "good" typefaces to see which one best fits your website's message
+      --> You can keep trying different typefaces as you design and build the page.
+
+  b) Use Good Font Sizes and Weights
+    4- When choosing font-sizes, limit choices! Use a "type scale" tool or other pre-defined range (TOOLBOX: type-scale.com)
+    5- Use a font size between 16px and 32px for "normal" text
+    6- For long text (like a blog post), try a size of 20px or even bigger
+    7- For headlines, you can go really big (50px+) and bold (600+), depending on personality
+    8- For any text, don't use a font weight under 400 (regular)
+    
+  c) Create A Good Reading Experience
+    9- Use less than 75 characters per line
+    10- For normal-sized text, use a line height between 1.5 and 2. For big text, go below 1.5
+    11- Decrease letter spacing in headlines, if it looks unnatural
+    12- Experiment with all caps for short titles. Make them small and bold and increase letter-space
+    13- Don't justify text
+    14- Don't center long text blocks. Small blocks are fine
+
+2. Colors
+  a) Choose the Right Color
+    1. Make the main color match your website's personality: colors convey meaning!
+      Red draws a lot of attention, and symbolizes power, passion, and excitement
+      Orange is less aggressive, and conveys happines, cheerfulness, and creativity
+      Yellow means joy, brightness, and intelligence
+      Green represents harmony, nature, growth, and health
+      Blue is associated with peace, trust worthiness, and professionalism
+      Purple conveys wealth, wisdom, and magic
+      Pink represents romance, care, and affection
+      Brown is associated with nature, durability and comfort
+      Black symbolizes power, elegance and minimalism, but also grif and sorrow
+    
+    2. Use a good color tone! Don't choose a random tone or CSS named colors 
+        (TOOLBOX: Open color, tailwindcss, flat UI colors 2)
+
+  b) Establish a Color System
+    3. You need at least two types of colors in your color palette: a main color and a grey color
+    4. With more experience, you can add more colors: accent colors 
+    (TOOLBOX: Open color, tailwindcss, flat UI colors 2, palleton.com, coolors, Tint & Shade Generator)
+    5. For diversity, create lighter and darker versions (tints and shades)
+    6. Use your main color to draw attention to the most important elements on the page
+    7. Use colors to add interesting accents or make entire components or sections stand out
+    8. You can try to use your color strategically in images and illustrations;
+    
+  c) Colors and Typography
+    9. On dark colored backgrounds, try to use a tint os the background for text;
+    10. Text should usually not be completely black. Lighten if up it looks heavy and uninviting;
+    11. Don't make text too light! Use a tool to check contrast between text and background colors (accessibility);
+      --> Contrast ratio needs to be at least 4.5:1 for normal text and 3:1 for larger text (18px+)    
+      
+3. Images/Illustrations
+  a) Use Good Images
+    1. Different types of images: product photos, storytelling fotos, illustrations, patterns
+    2. Use images to support your website's message and story. So only use relevant images!
+    3. Prefer original images. If not possible, use original looking stock images (not generic ones!)
+    (TOOLBOX: Unsplash, Pexels, DrawKit, unDraw)
+
+  b) Use Images Well
+    4. Try to show real people to trigger user's emotions
+    5. If necessary, crop images to fit your message 
+    6. Experiment combinig photos, illustrations and patterns
+
+  c) Handling Text On Images
+    7. Method #1: Darker or brighten image (completely or partially, using a gradient)
+    8. Method #2: Position text into neutral image area
+    9. Method #3: Put text in a box
+
+  d) Some Technical Details
+    10. To account for high-res screens, make image dimensions 2x as big as their displayed size
+    --> Scale factor: Actual pixels the screen contains/Pixels represented on screen
+    --> On high-res screens, scale fator is 2x or even 3x, on "normal" screens it's just 1x (1 physical pixel = 1 design pixel)
+    11. Compress images for a lower file size and better performance
+    (TOOLBOX: Unsplash, Pexels, DrawKit, unDraw, Sqoosh)
+    12. When using multiple images side-by-side, make sure they have the exact same dimensions
+
+4. Icons
+  a)Use Good Icons
+    1. Use a good icon pack, there are tons of free and paid icons packs
+    (TOOLBOX: Phosphor icons, ionicons, icons8, heroicons, emojis...)
+    2. Use only one icon pack. Don't mix icons from different icon packs
+    3. Use SVG icons or icon fonts. Don't use bitmap image formats (.jpg and .png)
+    --> Vector-Based ??
+        --> SVG images and icon fonts
+        --> Scale indefinetely! 
+    --> Bitmap ??
+        --> "Regular images": JPG, PNG, GIF
+        --> Do not scale, become unsharp!
+    4.Adjust to website personality! Roudness, weight and filled/outlined depend on typography
+  
+  b) When To Use Icons
+    5. Use icons to provide visual assistancee to text
+    6. Use icons for product feature blocks
+    7. Use icons associated with actions, and label them (unless no space or icon is 100% clear)
+    8. Use icons as bullet points
+
+  c) Use Icons Well
+    9. To keep icons neutral, use same color as text. To draw more attention, use different color
+    10. Don't confuse your users: icons need to make sense and fit the text or action
+    11. Don't make icons larger than what they were designed for. If needed, enclose them in a shape
+
+5. Shadows
+  a) Some Concepts First...
+    --> After an era of 100% flat design, we're now back to using shadows in UI design ("flat design 2.0": still minimal, but brings back shadows and depth for better usability)
+    --> Shador creates depth (3D): the more shadow, the further away from the interface the element is
+    --> Shadow can be used on boxes and text
+
+  b) Use Shadows Well
+    1. You don't have to use shadows! Only use them if it makes sense for the wwebsite personality
+    2. Use shadows in small doses: don't add shadows to every element!
+    3. Go light on shadows, don't make them too dark!
+    
+  c) Use Shadows In The Right Situation
+    4. Use small shadows for smaller elements that should stand out (to draw attention)
+    5. Use medium-sized shadows for larger areas that should out a bit more
+    6. Use large shadows for elements that should really float above the interface
+    7. Experiment with changing shadows on mouse interaction (click and hover)
+    8. Bonus: Experiment with glows (colored shadows)
+
+6. Border-radius
+  a) Use Border-Radius Well
+    1. Use Border-radius to increase the playfullness and fun of the design, to make it less serious
+    2. Typefaces have a certain roudness: make sure that border-radius matches that roundness!
+        --> Very round typefaces, lots of border-radius in button, icons and images
+        --> Boxy/square typefaces, but designers wantes to add some playfulness, so little border-radius
+    3. Use border-radius on buttons, images, around icons, standout sections and other elements
+    
+7. Whitespace
+  a) Why Whitespace
+    --> The right amount of whitespace makes design look clean, modern and polished
+    --> Whitespace communicates how different pieces of information are related to one another
+    --> Whitespace implies invisible relationships between the elements of a layout
+    
+  b) Where To Use Whitespace
+    1. Use tons os whitespace between sections
+    2. Use a lot of whitespace between groups of elements
+    3. Use whitespace between elements
+    4. Inside groups of elements, try to use whitespace instead of lines
+  
+  c) How Much Whitespace
+    5. The more some elements (or groups of elements) belong together, the closer they should be!
+      --> The "Law of Proximity"
+    6. Start with a lot of whitespace, maybe even too much! Then remove whitespace from there
+      --> Too much whitespace looks detached, too little looks too crammed
+    7. Match other design choices. If you have big text or big icons, you need more whitespace
+    8. Try a hard rule, such as using multiples of 16px for all spacing
+    
+
+8. Visual Hierarchy
+  a) What Is Visual Hierarchy
+    --> Visual hierarchy is about establishing which elements os a design are the most important ones. 
+    --> Visul hierarchy is about drawing attention to these most important elements
+    --> Visua hierarchy is about definig a "path" for users, to guide them through the page
+    --> We use a combination of position, size, colors, spacing, borders, and shadows to establish a meaningful visual hierarchy between elements/components
+
+  b) Visual Hierarchy Fundamentals
+    1. Position importatant elements closer to the top of the page, where they get more attention
+    2. Use images mindfully, as they draw lot of attention (larger images get more attention)
+    3. Whitespace creates separation, so use whitespace strategically to emphasize elements
+  
+  c) Visual Hierarchy For Text Elements
+    4. For text elements, use font size, font weight, color, and whitespace to convey importance
+    5. What text elements to emphasize? Titles, sub-titles, links, buttons, data points, icons
+    --> You can also de-emphasize less important text, like labels or secondary/additional information
+
+  d) Visual Hierarchy Between Components
+    6. Emphasize an important component using background color, shadow, or border (or multiple)
+    7. Try emphasizing some component A over component B by de-emphasizing component B
+    8. What components to emphasize? Testimonials, call-to-action sections, highlight sections, preview cards, forms, pricing tables, important rows/columns in tables, etc. 
+
+9. User Experience
+  a) What is User Experience (UX)
+    --> "Design is not just what it looks like and feels like. Design is how it works" - Steave Jobs
+    --> User Interface (UI) is the visual presentation of a product. It's how the graphical interface looks and feels like
+      --> Layout
+      --> "Personality"
+      --> Typography, colors, icons, etc. 
+    --> User Experience (UX) is the overall experience the user has while interacting with the product
+      --> Does the app feel logical and well thought out?
+      --> Does the navigation work intuitively?
+      --> Are users reaching their goals?
+
+  b) UI and UX Design
+    --> UI is the graphical interface: UI Design is what makes an interface beautiful
+    --> UX is experience with interface: UX Design is what makes an interface useful and functional
+    --> UX Design can not exist without UI Design
+
+  c) UX Design Guiding Principle: Goals
+    --> A website application exists for a reason: a user has a goal for visiting it, and a business has a goal for creating it
+      --> Good UX design aligns the user's goals with the business' goals
+
+  d) UX Rules for Usability
+    1. Don't design complicated layouts. Don't reivent the weel. Use patters tha users know.
+    2. Make your call-to-action the most prominent element, and make the text descriptive
+    3. Use blue text and underlined text only for links!
+    4. Animations should have a purpose and be fast: between 200 and 500 ms
+    5. In forms, align labels and fields in a single vertical line, to make the form easier to scan
+    6. Offer users good feedback for all actions: form errors, form success, etc. [web apps]
+    7. Place action button where they will create an effect (law of locality) [web apps]
+    
+  e) UX Rules for Website Content
+    8. Use a descriptive, keyword-focused headline on your main page. Don't be vague or fancy!
+    9. Only include relevant information, efficiently! Cut out fluff and make the content 100% clear
+    10. Use simple words! Avoid technical jargon and "smart-sounding" words
+    11. Break up long text with sub-headings, images, block quotes, bullet points, etc. 
+
+10. Components/Layout
+
+WEBSITE PERSONALITIES
+1. Serious/Elegant: For luxury and elegance, based on thin serif typefaces, golden or pastel colors, and big hight-quality images;
+  --> Industries: Real estate, high fashion, jewelry, luxury products or services
+  --> Typography: Serif typefaces (especially in headings), light font weight, small body font size
+  --> Colors: Gold, pastel colors, black, dark blue or grey
+  --> Images: Big, high-quality images are used to feature elegant and expensive products
+  --> Icons: Usually no icons, but thin icons and lines may be used
+  --> Shadow: Usually no shadows
+  --> Border-radius: Usually no border-radius
+  --> Layout: A creative and experimental layout is quite common
+
+2. Minimalist/Simple: Focusses on the essencial text content, using small or medium-sized sans-serif black text, lines, and a few images and icons;
+  --> Industries: Fashion, porfolios, minimalism companies, software startups
+  --> Typography: Boxy/squared sans-serif typefaces, small body font sizes
+  --> Colors: Usually black or dark grey, on pure white background. Usually just one color throughout the design
+  --> Images: Few images, which can be used to add some color to the design. Usually no illustrations, but if, than just black
+  --> Icons: Usually no icons, but small simple black icons may be used
+  --> Shadows: Usually no shadows
+  --> Border-Radius: Usually no border-radius
+  --> Layout: Simple layout, a narrow one-column layout is quite common
+
+3. Plain/Neutral: Design tha gets out of the way by using neutral and small typefaces, and a very structured layout. Common in big corporations;
+  --> Industries: Well-established corporations, companies that don't want to make an impact through design.
+  --> Typography: Neutral-looking sans serif typefaces are used, and text is usually small and doesn't have visual impact
+  --> Colors: Safe colors are employed, nothing too bright or to washed-out. Blues and blacks are common
+  --> Images: Images are frequently used, but usually in a small format
+  --> Icons: Usually no icons, but simple icons may be used
+  --> Shadows: Usually no shadows
+  --> Border-radius: Usually no border-radius
+  --> Layout: Structured and condensed layout, with lots of boxes and rows
+
+4. Bold/Confident: Makes an impact, by featuring big and bold typography, paired with confident use of big and bright colored blocks;
+  --> Industries: Digital agencies, software startups, travel, "strong" companies
+  --> Typography: Boxy/squared sans-serif typefaces, big and bold typography, especially headings. Uppercase headings are common
+  --> Colors: Usually multiple bright colors. Big color block/sections are used to draw attention
+  --> Images: Lots of big images are usually displayed
+  --> Icons: Usually no icons
+  --> Shadows: Usually no shadows
+  --> Border-radius: Usually no border-radius
+  --> Layout: All kind of layout, no particular tendencies 
+
+5. Calm/Peaceful: For products and services that care, transmitted by calming pastel colors, soft serif headings, and matching images/illustrations;
+  --> Industries: Healthcare, all products with focus on consumer well-being
+  --> Typography: Soft serif typefaces frequently used for headings, but sans-serif headings might be used too (e.g for software products)
+  --> Colors: Pastel/washed-out colors: light oranges, yellows, browns, greens, blues
+  --> Images: Images and illustrations are usual, matching calm color pallet
+  --> Icons: Icons are quite frequent
+  --> Shadows: Usually no shadow, but might be used sparingly
+  --> Border-radius: Some border-radius is usual
+  --> Layout: All kinds of layouts, no particular tendencies
+
+6. Startup/Upbeat: Widely used in startups, featuring medium-sized sans-serif typefaces, light-grey text and backgrounds, and rounded elements;
+  --> Industries: Software startups, and other modern-looking companies
+  --> Typography: Medium-sized headings (not too large), usually one sans-serif typeface in whole design. Tendency for lighter text colors
+  --> Colors: Blues, greens and purples are widely used. Lots of light backgrounds (mainly gray), gradients are also common
+  --> Images: Images or illustrations are always used. 3D illustrations are modern. Sometimes patterns and shapes add visual details
+  --> Icons: Icons are very frequent
+  --> Shadows: Subtle shadows are frequent. Glows are becoming modern
+  --> Border-radius: Border-radius is very common
+  --> Layout: Rows of cards and Z-patterns are usual, as well as animations
+
+7. Playful/Fun: Colorful and round designs, fueled by creative elements like hand-draw icons or illustrations, animations, and fun language.
+  --> Industries: Child products, animal products, food
+  --> Typography: Round and creative (e.g handwritten) sans-serif typefaces are frequent. Centered text is more common
+  --> Colors: Multiple colors are frequently used to design a colorful layout, all over backgrounds and text
+  --> Images: Images, hand-drawn (or 3D) illustrations, and geometric shapes and patterns are all very frequently used
+  --> Icons: Icons are very frequent, many times in a hand-drawn style
+  --> Shadows: Subtle shadows are quite common, but not always used
+  --> Border-radius: Border-radius is very common
+  --> Layout: All kinds of layouts, no particular tendencies
+
+--> Design personalities can be mixed: bold/calm injected on the rest of them.
+
+THE MISSING PIECE
+--> Design ingredients
+--> Web personalities
+--> Design guidelines & rules
+--> Gettign inspired and stealing like an artist: not completely copying a design! Instead, it's about taking good parts and adaptiong them to our needs
+(TOOLBOX: land-book.com, onepagelove.com, awwwards.com, screenlane.com)
+
+
+
+*/
